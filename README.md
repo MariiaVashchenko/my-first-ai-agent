@@ -2,23 +2,23 @@
 Дослідницький агент, який шукає інформацію в інтернеті та генерує структуровані Markdown-звіти.
 ---
 ## Як запустити
-1. Клонуй репозиторій:
+1. Клонувати репозиторій:
    ```bash
    git clone <url-репозиторію>
    cd research-agent
-2.Створи віртуальне середовище:
+2.Створити віртуальне середовище:
 
 bash
 python -m venv venv
 source venv/bin/activate  # Linux/Mac
 venv\Scripts\activate     # Windows
-Встанови залежності:
 
+3.Встановити залежності:
 bash
 pip install -r requirements.txt
 Створи файл .env і додай API-ключ (див. нижче)
 
-3.Запусти агента:
+4.Запустити агента:
 bash
 python main.py
 ------
@@ -75,8 +75,8 @@ write_report → зберігає звіт у output/
 
 Приклад використання:
 
-📝 Ти: Порівняй три підходи до RAG: naive, sentence-window та parent-child
-🤖 Агент думає...
-🤖 Агент: [структурований звіт]
+ Ти: Порівняй три підходи до RAG: naive, sentence-window та parent-child
+Агент думає...
+Агент: [структурований звіт]
 Звіт збережено: output/rag_comparison.md
 Приклад згенерованого звіту — у папці example_output/.
