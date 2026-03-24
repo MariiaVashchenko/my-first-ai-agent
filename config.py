@@ -4,13 +4,12 @@ from dotenv import load_dotenv
 load_dotenv()
 
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-MAX_SEARCH_RESULTS = 5          # Скільки результатів пошуку повертати
-MAX_PAGE_CONTENT_LENGTH = 8000  # Максимальна довжина тексту зі сторінки
-MAX_ITERATIONS = 15             # Максимум кроків агента
-OUTPUT_DIR = "output"           # Папка для збереження звітів
+MAX_SEARCH_RESULTS = 5          
+MAX_PAGE_CONTENT_LENGTH = 8000  
+MAX_ITERATIONS = 15            
+OUTPUT_DIR = "output"           
 
-MODEL_NAME = "gpt-4o-mini"  # Дешева і швидка модель від OpenAI
-
+MODEL_NAME = "gpt-4o-mini"  
 SYSTEM_PROMPT = """Ти — агент-дослідник. Твоя задача — шукати інформацію в інтернеті та створювати структуровані звіти.
 ## Твої можливості:
 1. Пошук інформації в інтернеті.
